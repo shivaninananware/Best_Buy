@@ -21,6 +21,7 @@ public class ServicesApiTest {
     }
 
     @Test
+    //get all the services details
     public void getServices_DefaultLimit_ShouldReturn10Results() throws InvalidResponseException {
         ServicesApiClient client = new ServicesApiClient(apiUrl);
         List<Service> services = client.getServices();
